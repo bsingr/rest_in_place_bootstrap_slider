@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require rest_in_place_bootstrap_slider
 //= require_tree .

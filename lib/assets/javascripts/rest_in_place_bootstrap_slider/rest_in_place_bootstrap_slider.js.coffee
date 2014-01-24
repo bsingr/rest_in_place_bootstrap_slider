@@ -25,7 +25,7 @@ class RestInPlaceSlider
   bindSliderInput : () ->
     @$sliderInput
       .slider()
-      .on('slide', @sliderInputUpdatedHandler)
+      .on('slideStop', @sliderInputUpdatedHandler)
 
   bindTextInput : () ->
     @$textInput.bind('success.rest-in-place', @textInputUpdatedHandler)

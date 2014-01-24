@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = RestInPlaceBootstrapSlider::VERSION
   spec.authors       = ["Jens Bissinger"]
   spec.email         = ["mail@jens-bissinger.de"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{An AJAX Inplace-Editor + Bootstrap-Slider for the Rails 3.1+ asset pipeline}
+  spec.summary       = %q{Build upon rest_in_place and bootstrap-slider-rails gems.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

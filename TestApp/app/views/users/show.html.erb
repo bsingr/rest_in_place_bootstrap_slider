@@ -3,7 +3,7 @@
 <p>
   <strong>Name:</strong>
   <span class="rest-in-place"
-        data-url=url_for([@user])
+        data-url=<%= url_for(@user) %>
         data-object="user"
         data-attribute="name">
     <%= @user.name %>

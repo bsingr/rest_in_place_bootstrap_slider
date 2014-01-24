@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <span class="rest-in-place"
+        data-url=url_for([@user])
+        data-object="user"
+        data-attribute="name">
+    <%= @user.name %>
+  </span>
+</p>
+
+<p class="rest-in-place-slider">
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

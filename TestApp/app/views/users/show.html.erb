@@ -12,7 +12,18 @@
 
 <p class="rest-in-place-slider">
   <strong>Age:</strong>
-  <%= @user.age %>
+  <span class="rest-in-place"
+        data-url="<%= url_for(@user) %>"
+        data-object="user"
+        data-attribute="age">
+    <%= @user.age %>
+  </span>
+  <input class="slider"
+         data-slider-id="user-<%= @user.id %>-age"
+         type="text" data-slider-min="0"
+         data-slider-max="199"
+         data-slider-step="1"
+         data-slider-value="<%= @user.age %>" />
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
